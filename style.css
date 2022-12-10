@@ -1,0 +1,443 @@
+@media only screen and (min-width: 900px) {
+  body{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+      margin:0;
+      padding: 0;
+      width: auto;
+          height: auto;
+      z-index: 1;
+      justify-items: stretch;
+          align-items: stretch;
+  }
+  
+  
+  #menu__toggle {
+    opacity: 0;
+  }
+  .header{  
+    height:50px;
+    z-index: 10;
+    position: relative;
+    /* padding:0 0 1rem 0; */
+    margin:0;
+    grid-row: 1;
+    width:auto;
+      display: grid;
+      align-items: center;
+      grid-template-columns: 5fr 1fr;
+      background-color: #FFFFFF;}
+  .logo{
+    width:8%;
+      margin: 0% 28%;
+  } 
+  
+  .menu__btn {
+    left:1rem;
+    display: flex; 
+    /* align-items: center;   */
+    position: relative;
+    margin-bottom: 6px;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #616161;
+  }
+  .menu__btn > span::before {
+    content: '';
+    top: -8px;
+  }
+  .menu__btn > span::after {
+    content: '';
+    top: 8px;
+  }
+  .menu__box {
+    margin-right: 2%;
+    word-wrap: break-word;
+    position:absolute;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    padding-right: 50%;
+    height: auto;
+    margin-top: 0;
+    list-style: none;
+
+    background-color: #FFFFFF;
+  }
+  .menu__item {
+      
+    display: block;
+    margin:10px;
+    padding: 5px 5px;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .menu__item:hover {
+    background-color: #CFD8DC;
+  }
+  #menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    left: 0;
+  }
+  .main{
+  width:100%;
+    height: 100%;   
+    position: relative;
+  
+  }
+  .footerText{
+    width:35%;
+  }
+  #center{
+    justify-self: center;
+    margin-top: 3%;
+    margin-left: 24%;
+    margin-right: 19%;
+    margin-bottom: -2%;
+    height:auto;
+  
+  }
+  #text-1{
+    margin-top: 1%;
+  font-size:13px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color:#FFFFFF;
+  opacity: 0.4;
+  }
+  #text-2{
+    margin-top: 1%;
+  width:50%;
+  font-size:34px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color:#FFFFFF;
+  }
+  .central-box{
+    display:flex;
+    flex-direction: row;
+    margin-top: 2%;
+    margin-bottom: -2%;
+    height:auto;
+  }
+  .box-text{
+    opacity: 0.4;
+  }
+  li{
+    list-style-type: none;
+  }
+  .more{
+    padding-top: 3%;
+    color:orange;
+  }
+  
+  .box-2{
+    margin-left: 2%;
+  }
+  #box1_pic{
+    
+    width:38%;
+    height:30%;
+    margin-top: 6%;
+    margin-bottom: 2%;
+  }
+  #box2_pic{
+    margin-top: 6%;
+    width:48%;
+    height:31%;
+    }
+  #Laptop{
+    margin-top: -1%;
+    height:70%;
+    margin-bottom: 6%;
+    width:35%;
+    margin-left: -2.7%;
+  }
+  .box{
+    font-size:12px;
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:#FFFFFF;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height:220px;
+    width:22%;
+    background-color: #114DD5;
+  }
+  .footer{
+    position: fixed;
+    bottom: 0;
+    left:0;
+    width: 100%;
+      background-color: #333;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+    padding: 1.2rem 0;
+  
+  }
+}
+
+@media only screen and (max-width: 900px) {
+    body{
+      height: 100%;
+      display: grid;
+        margin:0;
+        padding: 0;
+        width: auto;
+            height: auto;
+        z-index: 1;
+        justify-items: stretch;
+            align-items: stretch;
+    }
+    
+    
+    #menu__toggle {
+      opacity: 0;
+    }
+    .menu__div{
+      width:100%;
+    }
+    .header{  
+      vertical-align:center;
+      z-index: 10;
+      position: relative;
+      /* padding:0 0 1rem 0; */
+      margin:0;
+      
+      grid-row: 1;
+      width:auto;
+        display: grid;
+        align-items: center;
+        grid-template-columns: 5fr 1fr;
+        background-color: #FFFFFF;
+    }
+    .logo{
+      margin:auto 0;
+      align-self: center;
+      width:20%;
+    } 
+    
+    .menu__btn {
+      left:1rem;
+      display: flex; 
+      position: relative;
+      margin-bottom: 6px;
+      width: 16px;
+      height: 16px;
+      cursor: pointer;
+      z-index: 1;
+    }
+   
+    .menu__btn > span,
+    .menu__btn > span::before,
+    .menu__btn > span::after {
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background-color: #616161;
+    }
+    .menu__btn > span::before {
+      content: '';
+      top: -8px;
+    }
+    .menu__btn > span::after {
+      content: '';
+      top: 8px;
+    } 
+    .menu__box {
+      margin-right: 2%;
+      word-wrap: break-word;
+      position:absolute;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      position: fixed;
+      visibility: hidden;
+      top: 0;
+      align-items: center;
+      justify-content: center;
+      width: 70%;
+      padding-right: 50%;
+      height: auto;
+      margin-top: 0;
+      list-style: none;
+
+      background-color: #FFFFFF;
+    }
+    /* элементы меню */
+    .menu__item {
+        
+      display: block;
+      margin:10px;
+      padding: 5px 5px;
+      color: #333;
+      font-family: 'Roboto', sans-serif;
+      font-size: 10px;
+      font-weight: 600;
+    }
+    .menu__item:hover {
+      background-color: #CFD8DC;
+    }
+    #menu__toggle:checked ~ .menu__btn > span {
+      transform: rotate(45deg);
+    }
+    #menu__toggle:checked ~ .menu__btn > span::before {
+      top: 0;
+      transform: rotate(0);
+    }
+    #menu__toggle:checked ~ .menu__btn > span::after {
+      top: 0;
+      transform: rotate(90deg);
+    }
+    #menu__toggle:checked ~ .menu__box {
+      visibility: visible;
+      left: 0;
+    }
+    .main{
+      width:100%;
+      height: 100%;   
+      position: relative;
+    
+    }
+    .footerText{
+      font-size: 8.5px;
+      width:85%;
+    }
+    #center{
+      width:auto;
+      align-items: center;
+      justify-self: center;
+      text-align: center;
+      margin-bottom: -2%;
+      height:auto;
+    
+    }
+    #text-1{
+      margin-top: 10%;
+      width:100%;
+      grid-row:2;
+    font-size:13px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:#FFFFFF;
+    opacity: 0.4;
+    }
+    #text-2{
+      grid-row:3;
+      padding-left: 10%;
+      margin-top: 1%;
+      overflow-wrap: break-word ;
+      text-align: center;
+    width:80%;
+    font-size:30px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:#FFFFFF;
+    }
+    .central-box{
+      text-align: center;
+      justify-content: center;
+      justify-items: center;
+      align-items: center;
+      display:grid;
+      grid-template-rows: 1fr 1fr;
+      margin-top: 2%;
+      margin-bottom: -2%;
+      width:auto;  
+      height:auto;  
+    }
+    .box-text{
+      opacity: 0.4;
+    }
+    .box-1{
+      grid-row:5;
+    }
+    li{
+      list-style-type: none;
+    }
+    .more{
+      padding-top: 3%;
+      color:orange;
+    }
+    
+    .box-2{
+      grid-row:6;
+      margin-top: 4%;
+      margin-bottom: 10%;
+    }
+    #box1_pic{
+      
+      height:30%;
+      margin-top: 6%;
+      margin-bottom: 2%;
+    }
+    #box2_pic{
+      margin-top: 6%;
+      height:31%;
+      }
+    #Laptop{
+      align-self:center;
+      justify-self: center;
+      grid-row:4;
+      margin-top: -13%;
+      padding: 20% 0%;
+      width:80%;
+    }
+    .box{
+      font-size:12px;
+      text-align: center;
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color:#FFFFFF;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      height:220px;
+      width:70%;
+      background-color: #114DD5;
+    }
+    .footer{
+      margin-top: auto;
+      grid-row: 7;
+      bottom: 0;
+      left:0;
+      width: auto;
+        background-color: #333;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        padding:1.2rem 0.5rem;
+ }
+  
+  }
