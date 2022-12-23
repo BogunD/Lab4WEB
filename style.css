@@ -213,6 +213,7 @@
 
 @media only screen and (max-width: 900px) {
     body{
+      background-color: #003ecb;
       height: 100%;
       display: grid;
         margin:0;
